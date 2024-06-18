@@ -45,10 +45,10 @@ function resetGrid() {
 function setGridSize(gridSize) {
     if (gridSize === 'custom') {
         const userGridValue = parseInt(prompt('Please enter a number for the grid size: '), 10);
-        if (!isNaN(userGridValue) && userGridValue > 0) {
+        if (!isNaN(userGridValue) && userGridValue > 0 && userGridValue < 100) {
             gridSize = userGridValue;
         } else {
-            alert('Please enter a valid number');
+            alert('Please enter a valid number under 100');
             return;
         }
     }
