@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="game-area">
+        <h1>Etch-A-Sketch</h1>
     <!-- create container for grid -->
-     <div class="grid-container"></div>
+        <div class="grid-container"></div>
+        <div class="user-grid-choice">
+            <div class="user-size-area">
+                <button id="user-choice" class="user-btn">Custom Grid</button>
+            </div>
+            <div class="static-btns">
+                <button id="size16" class="user-btn user-grid">16 x 16</button>
+                <button id="size32" class="user-btn user-grid">36 x 36</button>
+                <button id="size64"class="user-btn user-grid">64 x 64</button>
+            </div>
+            <div class="reset-area">
+                <button id="resetGrid" class="user-btn">Reset Grid</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
