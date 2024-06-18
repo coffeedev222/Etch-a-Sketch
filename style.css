@@ -15,8 +15,8 @@ body {
     margin: 100px;
     border-radius: 10px;
     box-shadow: 2px 2px 12px 10px;
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
     font-family: "Cedarville Cursive", cursive;
     font-weight: bolder;
     font-size: 20px;
-    width: 450px;
+    width: 650px;
     text-align: center;
     margin: 0;
 }
@@ -33,8 +33,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 450px;
-    width: 450px;
+    height: 650px;
+    width: 650px;
     background-color: #fff;
 }
 
@@ -42,7 +42,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 450px;
+    width: 650px;
     height: 100px;
     padding: 10px;
 }
