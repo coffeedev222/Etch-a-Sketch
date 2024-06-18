@@ -2,9 +2,8 @@
 // Loop through a given number to create number of elements for a grid
 // Create event handler on hover to perform action on grid items 
 let gridContainer = document.querySelector('.grid-container');
-let userGridSize = 4;
-
-
+let userGridSize = 16;
+let resetButton = document.getElementById('resetGrid');
 
 for( i = 0; i < userGridSize; i++) {
     let rows = document.createElement('div');
@@ -18,3 +17,16 @@ for( i = 0; i < userGridSize; i++) {
     }
 }
 
+let selectedColumns = document.querySelectorAll('.columns');
+
+for( let i = 0; i < selectedColumns.length; i++) {
+    selectedColumns[i].addEventListener('mouseover', function() {
+        selectedColumns[i].classList.add('onHover');
+    })
+}
+
+resetButton.addEventListener('click', function() {
+    for( let j = 0; j < selectedColumns.length; j++) {
+        selectedColumns[j].classList.remove('onHover');
+    }
+})
